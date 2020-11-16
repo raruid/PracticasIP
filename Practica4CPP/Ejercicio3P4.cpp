@@ -3,7 +3,19 @@
 #include <iostream>
 using namespace std;
 
-int factorial(int numero);
+//int factorial(int numero);
+
+int factorial(int numero){
+
+	int resultadoFactorial = 1;
+
+	for(int i = 1; i <= numero; i++){
+		//resultadoFactorial *= i;
+		resultadoFactorial = resultadoFactorial * i;
+	}
+
+	return resultadoFactorial;
+}
 
 int main(){
 
@@ -21,10 +33,6 @@ int main(){
 	//Asigna la variable resultadoFactorial a la funcion factorial, que devuelve el numero factorial del numero pasado por parametros
 	resultadoFactorial = factorial(numero);
 
-	int mismuertos = factorial(8);
-
-	cout << "Me cago en mi puta madre " << mismuertos << endl;
-
 	cout << "El factorial de " << numero << " es: " << resultadoFactorial << endl;
 
     system("pause");
@@ -37,6 +45,7 @@ int main(){
 @autor Raúl Ruiz Idáñez
 **/
 
+/*
 int factorial(int numero){
 
 	int resultadoFactorial = 1;
@@ -47,3 +56,4 @@ int factorial(int numero){
 
 	return resultadoFactorial;
 }
+*/
